@@ -23,6 +23,18 @@ public class Employee {
         return salary;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
     // حساب الراتب السنوي
     public int getAnnualSalary() {
         return salary * 12;

@@ -30,6 +30,18 @@ public class Account {
         return balance;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+
     //  تضيف مبلغ إلى الرصيد
     public int credit(int amount) {
         balance += amount;
