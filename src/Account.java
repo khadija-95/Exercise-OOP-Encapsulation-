@@ -60,7 +60,7 @@ public class Account {
 
     // التحويل إلى حساب آخر إذا كان الرصيد يكفي
     public int transferTo(Account another, int amount) {
-        if (amount <= balance) {
+        if (amount>0 && amount <= balance) {
             this.debit(amount); // سحب المبلغ من الحساب الحالي
             another.credit(amount); // إيداع المبلغ في الحساب المستلم
         } else {
